@@ -1,0 +1,17 @@
+npm install -y
+npm install cypress
+npx cypress install --force (força a instalação do cypress novamente)
+npx cypress open
+
+npm install @faker-js/faker --save-dev (instalando o fakerJS)
+
+npm install cypress-real-events
+
+Gherking -> Formato da escrita dos cenários
+
+BDD -> Método para escrever os cenários
+
+Cucumber -> Framework para interpretar o Gherking e transformar em métodos
+
+O Cucumber usa textos entre aspas para associar as etapas de teste ao código 
+JavaScript correspondente.
