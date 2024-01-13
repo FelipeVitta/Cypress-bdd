@@ -17,6 +17,7 @@
 import './commands'
 import './pages/home_page_commands'
 import './pages/login_page_commands'
+import './pages/register_page_commands'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

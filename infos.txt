@@ -7,11 +7,11 @@ npm install @faker-js/faker --save-dev (instalando o fakerJS)
 
 npm install cypress-real-events
 
-Gherking -> Formato da escrita dos cenários
+Cucumber -> Framework para interpretar o Gherking e transformar em métodos
 
 BDD -> Método para escrever os cenários
 
-Cucumber -> Framework para interpretar o Gherking e transformar em métodos
+Gherking -> Formato da escrita dos cenários
 
 O Cucumber usa textos entre aspas para associar as etapas de teste ao código 
 JavaScript correspondente.

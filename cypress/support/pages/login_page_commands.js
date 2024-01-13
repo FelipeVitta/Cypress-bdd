@@ -12,7 +12,7 @@ const elements = {
     }
 }
 
-// Ações 
+// Commands 
 
 Cypress.Commands.add('clickLogin', () => {
     cy.get(elements.buttons.login)
