@@ -1,14 +1,19 @@
 const { defineConfig } = require("cypress");
+const cypressOnFix = require('cypress-on-fix');
 const createBundler = require("@bahmutov/cypress-esbuild-preprocessor");
 const { addCucumberPreprocessorPlugin } = require("@badeball/cypress-cucumber-preprocessor");
 const { createEsbuildPlugin } = require("@badeball/cypress-cucumber-preprocessor/esbuild");
 
 module.exports = defineConfig({
+  projectId: 'go89nr',
+  reporter: 'cypress-mochawesome-reporter',
   e2e: {
     baseUrl: 'https://automationpratice.com.br/',
     specPattern: "**/*.feature", //padrão do arquivo de teste (.feature)
-    setupNodeEvents(on, config) {
-      addCucumberPreprocessorPlugin(on, config);
+    async setupNodeEvents(on, config) {
+      on = cypressOnFix(on);
+      require('cypress-mochawesome-reporter/plugin')(on);
+      await addCucumberPreprocessorPlugin(on, config);
 
       on(
         "file:preprocessor",

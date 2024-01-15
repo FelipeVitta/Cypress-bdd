@@ -1,5 +1,7 @@
 /// <reference types="cypress"/>
 
+import 'cypress-mochawesome-reporter/cucumberSupport';
+
 import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor"
 
 const user_data = require('../../fixtures/pattern.json')
