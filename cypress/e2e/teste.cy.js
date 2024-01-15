@@ -1,9 +1,9 @@
 /// <reference types="cypress" />
 
-describe('fazendo teste', () => {
+describe('Teste', () => {
 
 
-    it.only('narutosasuke', () => {
+    it.only('Test', () => {
         cy.accessRegister()
         cy.clickOnRegister()
         cy.checkMessageErrorInRegister('O campo nome deve ser prenchido')
