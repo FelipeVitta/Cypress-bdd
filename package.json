@@ -13,7 +13,8 @@
     "@badeball/cypress-cucumber-preprocessor": "^19.1.1",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
     "cypress": "^13.6.0",
-    "cypress-on-fix": "^1.0.2"
+    "cypress-on-fix": "^1.0.2",
+    "cypress-real-events": "^1.11.0"
   },
   "devDependencies": {
     "@faker-js/faker": "^8.3.1",

@@ -2,11 +2,11 @@
 
 describe('Teste', () => {
 
-
     it.only('Test', () => {
-        cy.accessRegister()
-        cy.clickOnRegister()
-        cy.checkMessageErrorInRegister('O campo nome deve ser prenchido')
+        cy.viewport('macbook-15')
+        cy.accessShopPage()
+        cy.addRepeatedItemToCart()
+        cy.checkRepeatedItemMessage()
     })
 
     
